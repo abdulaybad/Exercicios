@@ -26,30 +26,3 @@ def comprar():
         
 
 
-def love():
-	from time import sleep
-
-	for string in 'I Love You':
-		print(string)
-		sleep(0.5)
-
-
-def verificar():
-	data ='D:\Abdu\Programação Python-C\Base de Dados\Recargas.txt'
-	read_data = open(data,'r')
-	recargas ={}
-	for recargas_validas in read_data:
-		recargas = recargas[recargas_validas]
-	for repetidos in recargas:
-		ad = recargas.count(repetidos)
-		if ad > 1:
-			recargas[repetidos] = str(ad) + ' ' + 'vezes'
-		else:
-			recargas[repetidos] = str(ad) + ' ' + 'vez'
-	print(recargas)
-
-#love()
-
-#gerar()
-#comprar()
-#verificar()
